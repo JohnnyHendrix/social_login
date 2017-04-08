@@ -1,0 +1,138 @@
+/**
+
+1. General
+2. Buttons
+*/
+
+/*----------------- 1. General -----------------*/
+html, body {
+    height: 100%;
+}
+
+body
+{
+    font-family:'Roboto', sans-serif;
+    background-color: #eaeaea;
+}
+
+div.center-block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------- 2. Material Buttons -----------------*/
+.md-button
+{
+    border:none;
+    cursor:pointer;
+    border-radius:2px;
+    padding:6px;
+    color:white;
+    box-shadow:12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    transition:all 0.3s ease;
+    text-transform:uppercase;
+}
+
+.md-button:hover
+{
+    box-shadow:2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.md-button.color-teal:hover
+{
+    background-color:#00897b;
+}
+
+/*----------------- 3. Colors -----------------*/
+.color-teal
+{
+    background-color:#009688;
+}
+
+.color-teal.card-header {
+    background-color: #00796B;
+    color: white;
+}
+
+/*----------------- 4. Cards -----------------*/
+.cards
+{
+    background-color:#FFF;
+    height:40%;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+}
+
+.card-header {
+    padding: 20px 23px;
+}
+
+.card-content {
+    padding: 20px 23px;
+}
+
+.login.cards {
+    width: 500px;
+}
+
+/*---------------------- 5. Form ------------------*/
+.form-group .label-control {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 100%;
+}
+
+.form-group .label-control::before,
+.form-group .label-control::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.form-group .label-control::before{
+    border-bottom: 1px solid #B9C1CA;
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+
+.form-group .label-control::after {
+    border-bottom: 2px solid #03A9F4;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.flat {
+    box-shadow:none;
+}
+
+.flat:hover {
+    box-shadow:none;
+}
+.md-input {
+    height: 44px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #dbe2e8;
+    font-size: 14px;
+    box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+    border-radius: 2px;
+    color: #2e3d49;
+}
+.md-input:focus {
+    outline: none;
+    border-color: #009688;
+    box-shadow:none;
+}
